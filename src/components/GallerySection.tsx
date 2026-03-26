@@ -2,7 +2,7 @@ import { SITE_DATA } from '../data/constants';
 
 export const GallerySection = () => {
   return (
-    <section id="galerie" className="py-24 px-6 bg-white/30 backdrop-blur-sm">
+    <section id="galerie" className="py-24 px-6 bg-gradient-to-b from-black via-gray-900 to-black">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-20 text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-400 to-cyan-400 drop-shadow-[0_0_20px_rgba(34,211,238,0.5)]">
           Galerie
