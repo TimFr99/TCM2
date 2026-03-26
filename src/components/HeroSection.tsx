@@ -22,7 +22,7 @@ export const HeroSection = () => {
           transform: `scale(${1 + scrollY * 0.0005}) translateY(${scrollY * 0.5}px)`,
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/30" />
       </div>
 
       <div className="relative h-full flex flex-col items-center justify-center z-10 px-4">
@@ -30,10 +30,10 @@ export const HeroSection = () => {
           <img
             src={SITE_DATA.hero.centerIconUrl}
             alt={SITE_DATA.bandName}
-            className="w-64 md:w-80 lg:w-96 h-auto drop-shadow-[0_0_30px_rgba(168,85,247,0.6)] animate-glow"
+            className="w-64 md:w-80 lg:w-96 h-auto drop-shadow-[0_0_50px_rgba(0,0,0,0.9)] animate-glow"
           />
         </div>
-        <p className="mt-8 text-xl md:text-2xl text-gray-200 font-light tracking-wider animate-fade-in-up animation-delay-300 drop-shadow-[0_0_10px_rgba(0,0,0,0.8)]">
+        <p className="mt-8 text-xl md:text-2xl text-white font-light tracking-wider animate-fade-in-up animation-delay-300 drop-shadow-[0_0_15px_rgba(0,0,0,1)] [text-shadow:_2px_2px_8px_rgb(0_0_0_/_80%)]">
           {SITE_DATA.hero.tagline}
         </p>
       </div>
