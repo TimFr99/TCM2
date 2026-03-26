@@ -42,10 +42,10 @@ export const SITE_DATA = {
   ],
 
   gallery: [
-    'https://xmhppiscgtlbhpzmhizj.supabase.co/storage/v1/object/public/media/images/01_LIve%20Foto%201.tiff',
-    'https://xmhppiscgtlbhpzmhizj.supabase.co/storage/v1/object/public/media/images/02_Live%20Foto%202.tiff',
-    'https://xmhppiscgtlbhpzmhizj.supabase.co/storage/v1/object/public/media/images/03_Live%20Foto%203.tiff',
-    'https://xmhppiscgtlbhpzmhizj.supabase.co/storage/v1/object/public/media/images/04_Live%20Foto%204.tiff',
+    'https://xmhppiscgtlbhpzmhizj.supabase.co/storage/v1/object/public/media/images/01_Live%20Foto%201.jpg',
+    'https://xmhppiscgtlbhpzmhizj.supabase.co/storage/v1/object/public/media/images/02_Live%20Foto%202.jpg',
+    'https://xmhppiscgtlbhpzmhizj.supabase.co/storage/v1/object/public/media/images/03_Live%20Foto%203.jpg',
+    'https://xmhppiscgtlbhpzmhizj.supabase.co/storage/v1/object/public/media/images/04_Live%20Foto%204.jpg',
     'https://xmhppiscgtlbhpzmhizj.supabase.co/storage/v1/object/public/media/images/Bandfoto%201.jpg',
     'https://xmhppiscgtlbhpzmhizj.supabase.co/storage/v1/object/public/media/images/Bandfoto%202.jpg',
   ],
