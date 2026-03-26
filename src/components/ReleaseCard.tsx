@@ -52,7 +52,7 @@ export const ReleaseCard = ({ title, spotifyTrackId, appleAlbumId, appleTrackId 
           </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="rounded-xl overflow-hidden shadow-lg mx-auto w-full md:w-full max-w-[240px] md:max-w-none">
+            <div className="rounded-xl overflow-hidden shadow-lg w-full">
               <iframe
                 style={{ borderRadius: '12px' }}
                 src={`https://open.spotify.com/embed/track/${spotifyTrackId}?utm_source=generator`}
@@ -64,7 +64,7 @@ export const ReleaseCard = ({ title, spotifyTrackId, appleAlbumId, appleTrackId 
                 loading="lazy"
               />
             </div>
-            <div className="rounded-xl overflow-hidden shadow-lg mx-auto w-full md:w-full max-w-[240px] md:max-w-none">
+            <div className="rounded-xl overflow-hidden shadow-lg w-full">
               <iframe
                 allow="autoplay *; encrypted-media *; fullscreen *"
                 frameBorder="0"
