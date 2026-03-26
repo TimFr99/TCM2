@@ -24,7 +24,7 @@ export const HeroSection = () => {
         }}
       />
 
-      <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/20" />
+      <div className="absolute inset-0 bg-black/15" />
 
       <div className="relative h-full flex flex-col items-center justify-center z-10 px-4">
         <div className="animate-fade-in-up">

@@ -26,10 +26,16 @@ export const TeaserSection = () => {
             </div>
           </div>
 
-          <div className="flex flex-col justify-center">
-            <div className="prose prose-invert max-w-none">
-              <p className="text-lg md:text-xl text-gray-300 leading-relaxed font-light">
-                {SITE_DATA.teaser.text}
+          <div className="flex flex-col justify-center h-full">
+            <div className="prose prose-invert max-w-none space-y-6">
+              <p className="text-base md:text-lg text-gray-300 leading-relaxed font-light">
+                The Crimson Moon ist ein modernes Rocktrio aus Lippstadt. Die Band um Sänger und Bassist Jan Hökenschnieder hat sich nach langjähriger Freundschaft gegründet, um gemeinsam eine neue musikalische Welt zu erschaffen.
+              </p>
+              <p className="text-base md:text-lg text-gray-300 leading-relaxed font-light">
+                Nach einer intensiven kreativen Phase hat die Formation einen modernen Rocksound kreiert, der angereichert durch progressive und popmusikalische Einflüsse einzigartig klingt.
+              </p>
+              <p className="text-base md:text-lg text-gray-300 leading-relaxed font-light">
+                Mit dem Ziel Menschen zu bewegen, ist ein mitreißendes audiovisuelles Erlebnis entstanden, welches die Zuhörer für einen Augenblick dem Alltag entfliehen lässt und sie in eine melancholische Welt entführt, die in Erinnerung bleibt.
               </p>
             </div>
           </div>
