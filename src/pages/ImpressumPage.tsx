@@ -5,7 +5,7 @@ import { Footer } from '../components/Footer';
 
 export const ImpressumPage = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-black">
       <Navbar />
 
       <div className="pt-32 pb-16 px-6">
