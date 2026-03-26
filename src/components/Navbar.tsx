@@ -33,19 +33,19 @@ export const Navbar = () => {
           <div className="flex items-center gap-8 flex-1 justify-end">
             <button
               onClick={() => scrollToSection('live-teaser')}
-              className="text-gray-700 hover:text-purple-600 transition-colors duration-300 text-sm tracking-wide font-light hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]"
+              className="text-white hover:text-purple-300 transition-colors duration-300 text-sm tracking-wide font-light hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]"
             >
               Live-Teaser
             </button>
             <button
               onClick={() => scrollToSection('releases')}
-              className="text-gray-700 hover:text-purple-600 transition-colors duration-300 text-sm tracking-wide font-light hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]"
+              className="text-white hover:text-purple-300 transition-colors duration-300 text-sm tracking-wide font-light hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]"
             >
               Releases
             </button>
             <button
               onClick={() => scrollToSection('galerie')}
-              className="text-gray-700 hover:text-purple-600 transition-colors duration-300 text-sm tracking-wide font-light hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]"
+              className="text-white hover:text-purple-300 transition-colors duration-300 text-sm tracking-wide font-light hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]"
             >
               Galerie
             </button>
@@ -69,7 +69,7 @@ export const Navbar = () => {
               href={SITE_DATA.navbar.instagramUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-700 hover:text-purple-600 transition-colors duration-300 text-sm tracking-wide font-light flex items-center gap-2 hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]"
+              className="text-white hover:text-purple-300 transition-colors duration-300 text-sm tracking-wide font-light flex items-center gap-2 hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]"
             >
               <Instagram size={16} />
               Instagram
@@ -78,14 +78,14 @@ export const Navbar = () => {
               href={SITE_DATA.navbar.downloadPdfUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-700 hover:text-purple-600 transition-colors duration-300 text-sm tracking-wide font-light flex items-center gap-2 hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]"
+              className="text-white hover:text-purple-300 transition-colors duration-300 text-sm tracking-wide font-light flex items-center gap-2 hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]"
             >
               <Download size={16} />
               Downloads
             </a>
             <a
               href={`mailto:${SITE_DATA.navbar.contactEmail}`}
-              className="text-gray-700 hover:text-purple-600 transition-colors duration-300 text-sm tracking-wide font-light hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]"
+              className="text-white hover:text-purple-300 transition-colors duration-300 text-sm tracking-wide font-light hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]"
             >
               Kontakt
             </a>

@@ -3,7 +3,7 @@ import { SITE_DATA } from '../data/constants';
 
 export const ReleasesSection = () => {
   return (
-    <section id="releases" className="py-24 px-6 bg-gradient-to-b from-gray-50 via-white to-gray-50">
+    <section id="releases" className="py-24 px-6 bg-white/20 backdrop-blur-sm">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-20 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-green-400 drop-shadow-[0_0_20px_rgba(168,85,247,0.5)]">
           Releases

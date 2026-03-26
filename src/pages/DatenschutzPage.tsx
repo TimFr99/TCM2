@@ -5,14 +5,14 @@ import { Footer } from '../components/Footer';
 
 export const DatenschutzPage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 via-gray-100 to-gray-50">
+    <div className="min-h-screen">
       <Navbar />
 
       <div className="pt-32 pb-16 px-6">
         <div className="max-w-4xl mx-auto">
           <Link
             to="/"
-            className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 transition-colors mb-8"
+            className="inline-flex items-center gap-2 text-white hover:text-purple-300 transition-colors mb-8 drop-shadow-lg"
           >
             <ArrowLeft size={20} />
             Zurück zur Startseite

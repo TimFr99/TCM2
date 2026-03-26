@@ -2,7 +2,7 @@ import { SITE_DATA } from '../data/constants';
 
 export const TeaserSection = () => {
   return (
-    <section id="live-teaser" className="py-24 px-6 bg-gradient-to-b from-gray-50 via-gray-100 to-gray-50">
+    <section id="live-teaser" className="py-24 px-6 bg-white/30 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-blue-400 to-purple-600 drop-shadow-[0_0_20px_rgba(168,85,247,0.5)]">
           Live Teaser
@@ -28,13 +28,13 @@ export const TeaserSection = () => {
 
           <div className="flex flex-col justify-center h-full">
             <div className="prose max-w-sm space-y-8">
-              <p className="text-xl md:text-2xl text-gray-700 leading-relaxed font-light">
+              <p className="text-xl md:text-2xl text-white drop-shadow-lg leading-relaxed font-light">
                 The Crimson Moon ist ein modernes Rocktrio aus Lippstadt. Die Band um Sänger und Bassist Jan Hökenschnieder hat sich nach langjähriger Freundschaft gegründet, um gemeinsam eine neue musikalische Welt zu erschaffen.
               </p>
-              <p className="text-xl md:text-2xl text-gray-700 leading-relaxed font-light">
+              <p className="text-xl md:text-2xl text-white drop-shadow-lg leading-relaxed font-light">
                 Nach einer intensiven kreativen Phase hat die Formation einen modernen Rocksound kreiert, der angereichert durch progressive und popmusikalische Einflüsse einzigartig klingt.
               </p>
-              <p className="text-xl md:text-2xl text-gray-700 leading-relaxed font-light">
+              <p className="text-xl md:text-2xl text-white drop-shadow-lg leading-relaxed font-light">
                 Mit dem Ziel Menschen zu bewegen, ist ein mitreißendes audiovisuelles Erlebnis entstanden, welches die Zuhörer für einen Augenblick dem Alltag entfliehen lässt und sie in eine melancholische Welt entführt, die in Erinnerung bleibt.
               </p>
             </div>
