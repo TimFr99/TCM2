@@ -2,7 +2,7 @@ import { SITE_DATA } from '../data/constants';
 
 export const TeaserSection = () => {
   return (
-    <section id="live-teaser" className="py-24 md:py-24 py-16 px-6 bg-gradient-to-b from-black via-gray-900 to-black">
+    <section id="live-teaser" className="py-12 md:py-24 px-6 bg-gradient-to-b from-black via-gray-900 to-black">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-blue-400 to-purple-600 drop-shadow-[0_0_20px_rgba(168,85,247,0.5)]">
           Live Teaser
