@@ -15,15 +15,16 @@ export const HeroSection = () => {
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      <div
-        className="absolute inset-0 bg-cover bg-center transition-transform duration-75"
+      <img
+        src={SITE_DATA.hero.backgroundImageUrl}
+        alt="Live Performance"
+        className="absolute inset-0 w-full h-full object-cover transition-transform duration-75"
         style={{
-          backgroundImage: `url(${SITE_DATA.hero.backgroundImageUrl})`,
           transform: `scale(${1 + scrollY * 0.0005}) translateY(${scrollY * 0.5}px)`,
         }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/30" />
-      </div>
+      />
+
+      <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/20" />
 
       <div className="relative h-full flex flex-col items-center justify-center z-10 px-4">
         <div className="animate-fade-in-up">
@@ -39,7 +40,7 @@ export const HeroSection = () => {
       </div>
 
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <ChevronDown className="text-gray-400 w-8 h-8" />
+        <ChevronDown className="text-white w-8 h-8 drop-shadow-lg" />
       </div>
     </section>
   );
