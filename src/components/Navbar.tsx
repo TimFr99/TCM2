@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
-import { Download, Instagram } from 'lucide-react';
+import { Download, Instagram, Menu, X } from 'lucide-react';
 import { SITE_DATA } from '../data/constants';
 
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,6 +19,7 @@ export const Navbar = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+    setMobileMenuOpen(false);
   };
 
   return (
@@ -29,7 +31,8 @@ export const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex items-center justify-between">
           <div className="flex items-center gap-8 flex-1 justify-end">
             <button
               onClick={() => scrollToSection('live-teaser')}
@@ -91,6 +94,79 @@ export const Navbar = () => {
             </a>
           </div>
         </div>
+
+        {/* Mobile Navigation */}
+        <div className="flex md:hidden items-center justify-between">
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="transition-transform duration-300"
+          >
+            <img
+              src={SITE_DATA.navbar.logoUrl}
+              alt={SITE_DATA.bandName}
+              className="h-10 w-auto drop-shadow-[0_0_12px_rgba(168,85,247,0.4)]"
+            />
+          </button>
+
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="text-gray-300 hover:text-purple-400 transition-colors duration-300"
+          >
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
+
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <div className="md:hidden mt-4 py-4 bg-black/95 backdrop-blur-lg rounded-lg border border-purple-900/30">
+            <div className="flex flex-col space-y-4 px-4">
+              <button
+                onClick={() => scrollToSection('live-teaser')}
+                className="text-gray-300 hover:text-purple-400 transition-colors duration-300 text-sm tracking-wide font-light text-left py-2"
+              >
+                Live-Teaser
+              </button>
+              <button
+                onClick={() => scrollToSection('releases')}
+                className="text-gray-300 hover:text-purple-400 transition-colors duration-300 text-sm tracking-wide font-light text-left py-2"
+              >
+                Releases
+              </button>
+              <button
+                onClick={() => scrollToSection('galerie')}
+                className="text-gray-300 hover:text-purple-400 transition-colors duration-300 text-sm tracking-wide font-light text-left py-2"
+              >
+                Galerie
+              </button>
+              <div className="border-t border-purple-900/30 pt-4 space-y-4">
+                <a
+                  href={SITE_DATA.navbar.instagramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-purple-400 transition-colors duration-300 text-sm tracking-wide font-light flex items-center gap-2 py-2"
+                >
+                  <Instagram size={16} />
+                  Instagram
+                </a>
+                <a
+                  href={SITE_DATA.navbar.downloadPdfUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-purple-400 transition-colors duration-300 text-sm tracking-wide font-light flex items-center gap-2 py-2"
+                >
+                  <Download size={16} />
+                  Downloads
+                </a>
+                <a
+                  href={`mailto:${SITE_DATA.navbar.contactEmail}`}
+                  className="text-gray-300 hover:text-purple-400 transition-colors duration-300 text-sm tracking-wide font-light py-2 block"
+                >
+                  Kontakt
+                </a>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   );
