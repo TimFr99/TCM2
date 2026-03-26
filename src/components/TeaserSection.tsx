@@ -8,10 +8,10 @@ export const TeaserSection = () => {
           Live Teaser
         </h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-8 items-start max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-blue-600/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500" />
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-purple-900/50 aspect-[9/16] w-full max-w-sm mx-auto lg:mx-0">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-purple-900/50 aspect-[9/16] w-full max-w-md mx-auto">
               <iframe
                 width="100%"
                 height="100%"
@@ -26,11 +26,8 @@ export const TeaserSection = () => {
             </div>
           </div>
 
-          <div className="flex flex-col justify-start h-full">
-            <h3 className="text-2xl md:text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300">
-              Über The Crimson Moon
-            </h3>
-            <div className="space-y-5 max-w-xl">
+          <div className="flex flex-col justify-center h-full">
+            <div className="prose prose-invert max-w-none space-y-6">
               <p className="text-base md:text-lg text-gray-300 leading-relaxed font-light">
                 The Crimson Moon ist ein modernes Rocktrio aus Lippstadt. Die Band um Sänger und Bassist Jan Hökenschnieder hat sich nach langjähriger Freundschaft gegründet, um gemeinsam eine neue musikalische Welt zu erschaffen.
               </p>
