@@ -5,14 +5,49 @@ interface ReleaseCardProps {
   appleTrackId: string;
 }
 
+const getGradientClasses = (title: string) => {
+  switch (title) {
+    case 'Drowning':
+      return {
+        card: 'bg-gradient-to-br from-purple-950/60 via-purple-900/40 to-black/90',
+        border: 'border-purple-800/40',
+        shadow: 'shadow-purple-900/30',
+        title: 'from-purple-200 to-purple-400'
+      };
+    case 'Off the Shore':
+      return {
+        card: 'bg-gradient-to-br from-blue-950/60 via-blue-900/40 to-black/90',
+        border: 'border-blue-800/40',
+        shadow: 'shadow-blue-900/30',
+        title: 'from-blue-200 to-blue-400'
+      };
+    case 'Petrichor':
+      return {
+        card: 'bg-gradient-to-br from-red-950/60 via-red-900/40 to-black/90',
+        border: 'border-red-800/40',
+        shadow: 'shadow-red-900/30',
+        title: 'from-red-200 to-red-400'
+      };
+    default:
+      return {
+        card: 'bg-gradient-to-br from-gray-900/80 to-black/80',
+        border: 'border-purple-900/30',
+        shadow: 'shadow-purple-900/20',
+        title: 'from-purple-300 to-blue-300'
+      };
+  }
+};
+
 export const ReleaseCard = ({ title, spotifyTrackId, appleAlbumId, appleTrackId }: ReleaseCardProps) => {
+  const gradients = getGradientClasses(title);
+
   return (
     <div className="group mb-16 last:mb-0">
       <div className="relative">
         <div className="absolute inset-0 bg-gradient-to-r from-purple-600/10 via-blue-600/10 to-green-600/10 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500" />
 
-        <div className="relative bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-sm rounded-3xl p-8 border border-purple-900/30 shadow-2xl shadow-purple-900/20">
-          <h3 className="text-3xl md:text-4xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300">
+        <div className={`relative ${gradients.card} backdrop-blur-sm rounded-3xl p-8 border ${gradients.border} shadow-2xl ${gradients.shadow}`}>
+          <h3 className={`text-3xl md:text-4xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r ${gradients.title}`}>
             {title}
           </h3>
 
